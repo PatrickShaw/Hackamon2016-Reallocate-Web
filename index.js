@@ -29,7 +29,8 @@ app.get(main_page_route, function(req, res) {
         function(error, response, body) {
             console.log(body);
             res.render("./pages/unit_page", {
-                units: body
+                units: JSON.parse(body),
+                student_id: student_id
             });
         });
 

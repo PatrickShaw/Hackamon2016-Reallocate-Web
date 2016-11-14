@@ -2,7 +2,8 @@ import React from 'react';
 import Header from './header';
 import NavigationBar from '../components/NavigationBar';
 import NavigationBarUnitItem from '../components/NavigationBarUnitItem';
-const MainLayout = props =>(
+const tests = ["rawr", "erwer", "awer"];
+const MainLayout = ({units}) =>(
     <html>
         <head>
         </head>
@@ -10,7 +11,7 @@ const MainLayout = props =>(
             <Header/>
             <NavigationBar>
                 {
-                    props.units.map(function(item, i) {
+                    units.map(function(item, i) {
                         return <NavigationBarUnitItem unit={item} key={i}/>;
                     })
                 }
