@@ -1,4 +1,5 @@
 import React from 'react';
+import './toolbar';
 const Toolbar = props => (
     <header className="toolbar">
         {props.children}

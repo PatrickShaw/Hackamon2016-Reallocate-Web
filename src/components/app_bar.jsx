@@ -1,5 +1,5 @@
 import React from 'react';
-import {Toolbar} from './Toolbar';
+import {Toolbar} from './toolbar';
 const AppBar = props => (
     <Toolbar>
         <h1>{props.title}</h1>

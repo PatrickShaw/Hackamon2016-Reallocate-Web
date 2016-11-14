@@ -1,31 +1,21 @@
 {
-  "name": "rellocate",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "ReAllocatePLUS-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-router": "^3.0.0",
+    "react-scripts": "0.7.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PatrickShaw/RellocatePLUS-frontend.git"
-  },
-  "author": "Pineapple Under the Sea",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PatrickShaw/RellocatePLUS-frontend/issues"
-  },
-  "homepage": "https://github.com/PatrickShaw/RellocatePLUS-frontend#readme",
   "dependencies": {
-    "compression": "^1.6.2",
-    "express": "^4.14.0",
-    "express-react-views": "^0.10.2",
+    "material-ui": "^0.16.2",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "request": "^2.78.0"
   },
-  "devDependencies": {
-    "css-loader": "^0.25.0",
-    "webpack": "^1.13.3"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }

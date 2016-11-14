@@ -1,0 +1,8 @@
+.button-text-container {
+    padding:8px 16px;
+    margin: 8px;
+    width: 88px;
+    text-align: center;
+    background-color: #004185;
+    float: right;
+}
