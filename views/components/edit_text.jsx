@@ -5,4 +5,5 @@ const EditText = props => (
             <input type="text" name={props.name}/>
         </div>
 );
+export {EditText};
 export default EditText;

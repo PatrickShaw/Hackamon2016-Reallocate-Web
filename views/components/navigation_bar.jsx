@@ -4,4 +4,5 @@ const NavigationBar = props => (
         {props.children}
     </aside>
 );
+export {NavigationBar};
 export default NavigationBar;

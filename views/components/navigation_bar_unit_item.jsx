@@ -5,5 +5,5 @@ const NavigationBarUnitItem = props =>(
         <h2> {props.unit.title}</h2>
     </section>
 );
-
+export {NavigationBarUnitItem};
 export default NavigationBarUnitItem;
