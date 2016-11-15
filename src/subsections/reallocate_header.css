@@ -1,6 +1,11 @@
 .reallocate-header{
     background-color: #004185;
+    padding:8px 16px;
+    color: #FFFFFF;
+}
+.monash-header{
+    padding:8px 16px;
 }
 .monash-logo {
-    height: 80px;
+    height: 56px;
 }

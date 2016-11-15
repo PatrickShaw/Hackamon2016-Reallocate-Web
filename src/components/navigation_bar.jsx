@@ -1,6 +1,6 @@
 import React from 'react';
 const NavigationBar = props => (
-    <aside>
+    <aside className="navigation-bar">
         {props.children}
     </aside>
 );

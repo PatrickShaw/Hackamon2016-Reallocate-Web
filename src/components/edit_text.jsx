@@ -1,10 +1,10 @@
 import React from 'react';
 import './edit_text.css';
-const EditText = props => (
+const EditText = ({hint, name, error, ...other}) => (
         <div className="edit-text">
-            <p className="edit-text-hint">{props.hint}</p>
-            <input type="text" className="edit-text-input-box" name={props.name}/>
-            <p className="edit-text-error">{props.error}</p>
+            <p className="edit-text-hint">{hint}</p>
+            <input type="text" className="edit-text-input-box" name={name} {...other}/>
+            <p className="edit-text-error">{error}</p>
         </div>
 );
 export {EditText};

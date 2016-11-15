@@ -1,10 +1,10 @@
 import React from 'react';
 import {TextView} from './text_view';
 import './button.css';
-const Button = props => (
-    <a href={props.href} className="button-link">
+const Button = ({href, text, ...other}) => (
+    <a href={href} className="button-link" {...other}>
         <div className="button-text-container">
-            <TextView text={props.text}/>
+            <TextView text={text}/>
         </div>
     </a>
 );

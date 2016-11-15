@@ -3,7 +3,7 @@ import request from 'request';
 import {get_units_url} from '../urls/api_urls';
 import {ReAllocateHeader} from '../subsections/reallocate_header';
 import {NavigationBar} from '../components/navigation_bar';
-import {NavigationBarUnitItem} from '../components/navigation_bar_unit_item';
+import {NavigationBarUnitItem} from '../subsections/navigation_bar_unit_item';
 import {MainLayout} from '../layouts/layout_main';
 class AppPage extends React.Component {
 

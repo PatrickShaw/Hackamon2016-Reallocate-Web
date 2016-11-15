@@ -5,9 +5,9 @@ import MonashLogo from '../drawables/monash-logo.png';
 import {get_monash_home_page_url} from '../urls/monash_urls';
 const ReAllocateHeader = props =>(
     <Toolbar>
-        <header className="monsah-header">
+        <header className="monash-header">
             <a href={get_monash_home_page_url()}>
-                <image src={MonashLogo} className="monash-logo" alt="Monash University"/>
+                <img src={MonashLogo} className="monash-logo" alt="Monash University"/>
             </a>
         </header>
         <header className="reallocate-header">
