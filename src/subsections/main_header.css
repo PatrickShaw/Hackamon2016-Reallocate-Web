@@ -1,0 +1,7 @@
+.top-navigation li a:hover, .top-navigation li a:visited {
+    background-color: #245c96;
+    color: #FFFFFF;
+}
+.top-navigation li a:active {
+    background-color: #346cA6;
+}

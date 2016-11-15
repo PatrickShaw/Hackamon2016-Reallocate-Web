@@ -1,0 +1,22 @@
+.class-table {
+    padding: 16px;
+}
+.classes-header {
+    padding:16px;
+    background-color: #245c96;
+}
+.classes-header h1 {
+    font-size: 1.5em;
+    margin: 0 0 8px 0;
+}
+.classes-header h2 {
+    font-size: 1.4em;
+    margin: 0 0 8px 0;
+}
+.classes-header h3 {
+    font-size: 1.3em;
+    margin: 0;
+}
+.class-table-header {
+    background-color: #e2edf6;
+}

@@ -1,11 +1,17 @@
-.unit-item {
-    background-color: #FFFFFF;
-    width:128px;
-    height:88px;
+.navigation-bar-unit-item {
+     background-color: #FFFFFF;
+     float: none;
+ }
+.unit-info h1 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin: 0 0 12px 0;
 }
-h1 {
-    font-size: 0.5em;
+.unit-info h2{
+    margin: 0;
+    font-size: 1em;
 }
-h2{
-    font-size: 0.3em;
+.unit-info{
+    padding: 16px 16px;
+    background-color: #f1f6fa;
 }

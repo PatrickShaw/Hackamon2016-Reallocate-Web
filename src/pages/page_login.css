@@ -1,6 +1,11 @@
-.card-container {
+.login-main-content {
     width: 50%;
     margin: auto auto;
-    height: 50%;
+    height: 75%;
     background-color: #FFFFFF;
+}
+
+.button-login-container {
+    float: right;
+    width: 88px;
 }

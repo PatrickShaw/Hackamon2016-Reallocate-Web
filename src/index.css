@@ -4,3 +4,63 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+.raised{
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.raised-interactive:hover {
+  box-shadow: 0 3px 9px rgba(0,0,0,0.25), 0 2px 4px rgba(0,0,0,0.22);
+}
+h1, h2, h3, h4 {
+  font-weight: bolder;
+}
+
+.colored-hover:hover {
+  background-color: #346cA6;
+}
+.colored {
+  background-color: #245c96;
+}
+.button {
+  padding:16px 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a::selection {
+  text-decoration: none;
+}
+.button p {
+  color: #FFFFFF;
+  line-height: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.text-primary-colored {
+  color: #004185;
+}
+.text-primary-dark {
+  color:rgba(0,0,0,0.87);
+}
+.text-primary-light {
+  color:#FFFFFF;
+}
+.bordered {
+  border: 1px solid #a9b9c5;
+  border-radius: 3px;
+}
+*{
+  color: #004185;
+  word-wrap: break-word;
+}
