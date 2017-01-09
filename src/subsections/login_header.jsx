@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
-import './reallocate_header.css';
+import './header_reallocate.css';
 import './login_header.css';
 const LoginHeader = props =>(
     <nav className="reallocate-header navbar">

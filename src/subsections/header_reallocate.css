@@ -1,9 +1,8 @@
 .main-navigation {
-    align-self:flex-end;
     display:block;
 }
 .logo {
-    justify-content: flex-start;
+   justify-content: flex-start;
 }
 .reallocate-header{
     background-color: #004185;
@@ -25,4 +24,8 @@ a {
 }
 .top-navigation li a:active {
     background-color: #346cA6;
+}
+
+.nav-item{
+    padding: 16px;
 }
