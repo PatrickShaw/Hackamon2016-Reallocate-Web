@@ -1,7 +1,6 @@
 .enrolment-header {
     background-color: #245c96;
     padding: 8px 16px;
-    margin: 0;
 }
 .enrolment-header-text {
     font-weight: bolder;
@@ -10,7 +9,4 @@
 }
 .unit-navigation {
     margin: 16px 0;
-}
-.main-content {
-    padding: 0;
 }

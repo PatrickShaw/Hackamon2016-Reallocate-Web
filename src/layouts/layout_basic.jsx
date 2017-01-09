@@ -1,6 +1,6 @@
 import React from 'react';
 const BasicLayout = props => (
-    <div>
+    <div className="container wrap">
         {props.children}
     </div>
 );
