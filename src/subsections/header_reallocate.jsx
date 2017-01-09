@@ -1,20 +1,16 @@
 import React from 'react';
 import {Link} from 'react-router';
-import './header_reallocate.css';
+import {HeaderNavButton} from '../components/button_nav.jsx';
 const MainHeader = props =>(
-    <header className="reallocate-header">
-        <nav className="container even-space v-center-items">
-            <div className="logo">
-                <Link to="/"><h1 className="light-text reallocate-heading">ReAllocate+</h1></Link>
-            </div>'
-            <div className="main-navigation">
-                <Link className="nav-item" to="/">Home</Link>
-                <a href="https://allocate.timetable.monash.edu/aplus-2016/student">Timetable</a>
-                <Link className="nav-item" to="/">My Requests</Link>
-                <Link className="nav-item" to="/">Preferences</Link>
-                <Link className="nav-item" to="/">Help</Link>
-                <Link className="nav-item" to="/login">Logout</Link>
-            </div>
+    <header className="background-1">
+        <nav className="container">
+            <h1 className="reallocate-heading logo"><Link className="txt-primary-light" to="/">ReAllocate+</Link></h1>
+            <HeaderNavButton to="/">Home</HeaderNavButton>
+            <HeaderNavButton to="https://allocate.timetable.monash.edu/aplus-2016/student">Timetable</HeaderNavButton>
+            <HeaderNavButton to="/">My Requests</HeaderNavButton>
+            <HeaderNavButton to="/">Preferences</HeaderNavButton>
+            <HeaderNavButton to="/">Help</HeaderNavButton>
+            <HeaderNavButton to="/">Logout</HeaderNavButton>
         </nav>
     </header>
 );

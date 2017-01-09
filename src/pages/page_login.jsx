@@ -23,7 +23,7 @@ class LoginPage extends React.Component {
                         <Link to="/">
                             <div className="button-login-container">
                                 <div className="raised-interactive button colored colored-interactive">
-                                    <p className="text-primary-light">Login</p>
+                                    <p className="txt-primary-light">Login</p>
                                 </div>
                             </div>
                         </Link>

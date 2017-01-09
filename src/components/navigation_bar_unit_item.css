@@ -1,0 +1,17 @@
+.navigation-bar-unit-item {
+     background-color: #FFFFFF;
+    width:100%;
+ }
+.unit-info h1 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin: 0 0 12px 0;
+}
+.unit-info h2{
+    margin: 0;
+    font-size: 1em;
+}
+.unit-info{
+    padding: 16px 16px;
+    background-color: #f1f6fa;
+}

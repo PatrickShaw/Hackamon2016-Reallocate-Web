@@ -2,8 +2,8 @@ import React from 'react';
 import request from 'request';
 import {get_units_url} from '../urls/api_urls';
 import {ProfileItem} from '../subsections/profile_item';
-import {NavigationBarUnitItem} from '../subsections/navigation_bar_unit_item';
-import {NavigationBarUnitClassSubItem} from '../subsections/navigation_bar_class_type_sub_item';
+import {NavigationBarUnitItem} from '../components/navigation_bar_unit_item';
+import {NavigationBarUnitClassSubItem} from '../components/navigation_bar_class_type_sub_item';
 import {BasicLayout} from './layout_basic';
 import {Link} from 'react-router';
 import {MainHeader} from '../subsections/header_reallocate';
@@ -35,6 +35,8 @@ class MainLayout extends React.Component {
         return <BasicLayout>
             <MonashHeader/>
             <MainHeader/>
+            <div className="container">
+
             <aside className="sidebar">
                 <ProfileItem
                     first_name="Patrick"
@@ -42,23 +44,23 @@ class MainLayout extends React.Component {
                     email="Patrick.Leong.Shaw@gmail.com"/>
                 <nav className="container wrap unit-navigation bordered">
                     <header className="enrolment-header">
-                        <h1 className="enrolment-header-text text-primary-light">Enrolment</h1>
+                        <h1 className="enrolment-header-txt txt-primary-light">Enrolment</h1>
                     </header>
                     {
                         this.state.units.map(function (unit, i) {
                             return <NavigationBarUnitItem key={i} unit={unit}>
                                 <ul className="nav">
-                                {
-                                    unit.required.map(
-                                        function(class_type, i) {
-                                            return <li key={i}><Link to={{pathname:"/classes", query:{uuid:unit.uuid, class_type: class_type}}}>
-                                                <NavigationBarUnitClassSubItem
-                                                    class_type={class_type}
-                                                    onClick={parent.select_unit_class_type.bind(parent, unit, class_type)}/>
-                                            </Link></li>
-                                        }
-                                    )
-                                }
+                                    {
+                                        unit.required.map(
+                                            function(class_type, i) {
+                                                return <li key={i}><Link to={{pathname:"/classes", query:{uuid:unit.uuid, class_type: class_type}}}>
+                                                    <NavigationBarUnitClassSubItem
+                                                        class_type={class_type}
+                                                        onClick={parent.select_unit_class_type.bind(parent, unit, class_type)}/>
+                                                </Link></li>
+                                            }
+                                        )
+                                    }
                                 </ul>
                             </NavigationBarUnitItem>
                         })
@@ -70,6 +72,7 @@ class MainLayout extends React.Component {
                     {this.props.children}
                 </div>
             </main>
+            </div>
             <footer>
                 <h1>Footer here</h1>
             </footer>

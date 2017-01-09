@@ -3,10 +3,12 @@ import './monash_header.css';
 import MonashLogo from '../drawables/monash-logo.svg';
 import {get_monash_home_page_url} from '../urls/monash_urls';
 const MonashHeader = props => (
-    <header className="monash-header navbar">
-        <a href={get_monash_home_page_url()} className="navbar-brand">
-            <img src={MonashLogo} className="monash-logo" alt="Monash University"/>
-        </a>
+    <header>
+        <h1 className="logo">
+            {/* TODO: <a href={get_monash_home_page_url()}>*/}
+                <img src={MonashLogo} className="monash-logo" alt="Monash University"/>
+            {/*</a> */}
+    </h1>
     </header>
 );
 export {MonashHeader};

@@ -53,9 +53,9 @@ class UnitClassesSection extends React.Component {
         }
             return <div className="classes">
                 <div className="classes-header">
-                    <h1 className="text-primary-light">{this.state.unit != null ? this.state.unit.uuid : ""}</h1>
-                    <h2 className="text-primary-light">{this.state.unit != null ? this.state.unit.title : ""}</h2>
-                    <h3 className="text-primary-light">{this.props.location.query.class_type != null ? this.props.location.query.class_type : ""}</h3>
+                    <h1 className="txt-primary-light">{this.state.unit != null ? this.state.unit.uuid : ""}</h1>
+                    <h2 className="txt-primary-light">{this.state.unit != null ? this.state.unit.title : ""}</h2>
+                    <h3 className="txt-primary-light">{this.props.location.query.class_type != null ? this.props.location.query.class_type : ""}</h3>
                 </div>
                 <div className="class-table">
                     <div className="table-responsive">
