@@ -1,5 +1,6 @@
 .class-table {
     padding: 16px;
+    display: flex;
 }
 .classes-header {
     padding:16px;
@@ -19,4 +20,13 @@
 }
 .class-table-header {
     background-color: #e2edf6;
+}
+.table-responsive{
+    width:100%;
+}
+.table{
+    width: 100%;
+}
+td{
+    text-align: center;
 }

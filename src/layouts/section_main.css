@@ -4,5 +4,11 @@
 .enrolment-header-txt {
     font-weight: bolder;
     font-size: 2em;
+    padding-left: 16px;
     margin: 0;
+}
+
+.nav{
+    list-style: none;
+    padding-left: 16px;
 }

@@ -42,6 +42,7 @@ header {
   flex-basis: 1024px;
   flex-shrink: 3;
   flex-grow: 9;
+  padding: 16px;
 }
 .background-1 {
   background-color: #004185;
