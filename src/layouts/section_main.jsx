@@ -37,41 +37,41 @@ class MainLayout extends React.Component {
             <MainHeader/>
             <div className="container">
 
-            <aside className="sidebar">
-                <ProfileItem
-                    first_name="Patrick"
-                    last_name='Shaw'
-                    email="Patrick.Leong.Shaw@gmail.com"/>
-                <nav className="container wrap unit-navigation bordered">
-                    <header className="enrolment-header">
-                        <h1 className="enrolment-header-txt txt-primary-light">Enrolment</h1>
-                    </header>
-                    {
-                        this.state.units.map(function (unit, i) {
-                            return <NavigationBarUnitItem key={i} unit={unit}>
-                                <ul className="nav">
-                                    {
-                                        unit.required.map(
-                                            function(class_type, i) {
-                                                return <li key={i}><Link to={{pathname:"/classes", query:{uuid:unit.uuid, class_type: class_type}}}>
-                                                    <NavigationBarUnitClassSubItem
-                                                        class_type={class_type}
-                                                        onClick={parent.select_unit_class_type.bind(parent, unit, class_type)}/>
-                                                </Link></li>
-                                            }
-                                        )
-                                    }
-                                </ul>
-                            </NavigationBarUnitItem>
-                        })
-                    }
-                </nav>
-            </aside>
-            <main className="main-content">
-                <div className="bordered">
-                    {this.props.children}
-                </div>
-            </main>
+                <aside className="sidebar">
+                    <ProfileItem
+                        first_name="Patrick"
+                        last_name='Shaw'
+                        email="Patrick.Leong.Shaw@gmail.com"/>
+                    <nav className="container wrap bordered">
+                        <header className="enrolment-header">
+                            <h1 className="enrolment-header-txt txt-primary-light">Enrolment</h1>
+                        </header>
+                        {
+                            this.state.units.map(function (unit, i) {
+                                return <NavigationBarUnitItem key={i} unit={unit}>
+                                    <ul>
+                                        {
+                                            unit.required.map(
+                                                function(class_type, i) {
+                                                    return <li key={i}><Link to={{pathname:"/classes", query:{uuid:unit.uuid, class_type: class_type}}}>
+                                                        <NavigationBarUnitClassSubItem
+                                                            class_type={class_type}
+                                                            onClick={parent.select_unit_class_type.bind(parent, unit, class_type)}/>
+                                                    </Link></li>
+                                                }
+                                            )
+                                        }
+                                    </ul>
+                                </NavigationBarUnitItem>
+                            })
+                        }
+                    </nav>
+                </aside>
+                <main className="main-content">
+                    <div className="bordered">
+                        {this.props.children}
+                    </div>
+                </main>
             </div>
             <footer>
                 <h1>Footer here</h1>

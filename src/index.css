@@ -5,6 +5,13 @@ body {
   width:100%;
   font-family: sans-serif;
 }
+nav ul {
+    list-style: none;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
 .btn {
     padding: 8px 16px;
     text-align: center;
@@ -56,6 +63,7 @@ header {
 .pad-lg {
   padding: 32px;
 }
+
 .card {
   border-radius: 2px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -123,6 +131,9 @@ a::selection {
 .bordered {
   border: 1px solid #a9b9c5;
   border-radius: 3px;
+}
+.bordered *{
+  z-index: -1;
 }
 *{
   word-wrap: break-word;

@@ -6,9 +6,9 @@ const MonashHeader = props => (
     <header>
         <h1 className="logo">
             {/* TODO: <a href={get_monash_home_page_url()}>*/}
-                <img src={MonashLogo} className="monash-logo" alt="Monash University"/>
+            <img src={MonashLogo} className="monash-logo" alt="Monash University"/>
             {/*</a> */}
-    </h1>
+        </h1>
     </header>
 );
 export {MonashHeader};
