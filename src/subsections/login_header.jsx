@@ -5,7 +5,7 @@ const LoginHeader = props =>(
     <nav className="reallocate-header navbar">
         <div className="container-fluid">
             <div className="navbar-header">
-                <Link to="/login"><h1 className="navbar-brand txt-primary-light reallocate-heading">ReAllocate+</h1></Link>
+                <Link to="/login"><h1 className="txt-primary-light reallocate-heading">ReAllocate+</h1></Link>
             </div>
         </div>
     </nav>

@@ -36,28 +36,31 @@ class MainLayout extends React.Component {
             <MonashHeader/>
             <MainHeader/>
             <div className="container">
-
-                <aside className="sidebar">
+                <aside className="container wrap sidebar">
                     <ProfileItem
                         first_name="Patrick"
                         last_name='Shaw'
                         email="Patrick.Leong.Shaw@gmail.com"/>
                     <nav className="container wrap bordered">
-                        <header className="enrolment-header">
+                        <header className="background-1 pad-md">
                             <h1 className="enrolment-header-txt txt-primary-light">Enrolment</h1>
                         </header>
                         {
                             this.state.units.map(function (unit, i) {
                                 return <NavigationBarUnitItem key={i} unit={unit}>
-                                    <ul>
+                                    <ul className="pad-md">
                                         {
                                             unit.required.map(
                                                 function(class_type, i) {
-                                                    return <li key={i}><Link to={{pathname:"/classes", query:{uuid:unit.uuid, class_type: class_type}}}>
-                                                        <NavigationBarUnitClassSubItem
-                                                            class_type={class_type}
-                                                            onClick={parent.select_unit_class_type.bind(parent, unit, class_type)}/>
-                                                    </Link></li>
+                                                    return <li key={i}>
+                                                            <Link to={{pathname:"/classes", query:{uuid:unit.uuid, class_type: class_type}}}>
+                                                                <p className="txt-primary-colored pad-sm"
+                                                                   class_type={class_type}
+                                                                   onClick={parent.select_unit_class_type.bind(parent, unit, class_type)}>
+                                                                    {`»  ${class_type}`}
+                                                                </p>
+                                                            </Link>
+                                                        </li>
                                                 }
                                             )
                                         }

@@ -5,6 +5,9 @@ body {
   width:100%;
   font-family: sans-serif;
 }
+nav * p {
+  margin: 0;
+}
 nav ul {
     list-style: none;
 }
@@ -41,12 +44,12 @@ header {
   justify-content: space-between;
 }
 .sidebar {
-  flex-basis: 300px;
+  flex-basis: 252px;
   flex-shrink: 7;
   flex-grow: 1;
 }
 .main-content {
-  flex-basis: 1024px;
+  flex-basis: 600px;
   flex-shrink: 3;
   flex-grow: 9;
   padding: 16px;
